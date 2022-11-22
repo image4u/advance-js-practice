@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rest</title>
+    <script>
+      function sum(name, course, ...arg) {
+
+        document.write(`hello ${name} of ${course} :`);
+
+        let sum = 0;
+        for (let i in arg){
+          sum += arg[i];
+        }
+        document.write(sum + "<br>");
+      }
+      sum("sharukh", "Btec",60,30,40);
+      sum("salman", "BE",20,30,40,10);
+      sum("amir", "BCom",20,30,40,115);
+      sum("saif", "BLLB",20,30,40,4,65,9);
+
+    </script>
+  </head>
+  <body></body>
+</html>
